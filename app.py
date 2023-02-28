@@ -267,4 +267,4 @@ with demo:
     #     gr.Examples(examples, inputs=input)
     #     input.change(fn=ner, inputs=input, outputs=output)
 #layout="vertical"
-demo.launch(debug=True)
+demo.launch(server_name='0.0.0.0')
