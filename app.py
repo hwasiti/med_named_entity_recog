@@ -127,7 +127,7 @@ def get_today_filename():
 
 def get_base(filename): 
         basedir = os.path.dirname(__file__)
-        loadPath = basedir + "\\" + filename
+        loadPath = basedir + "/reports/" + filename
         #print("Loading: " + loadPath)
         return loadPath
 
