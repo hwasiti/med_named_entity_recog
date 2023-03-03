@@ -232,7 +232,7 @@ def ner(text):
     outputDataframe = pd.read_csv(outputFile)
     return (ner_content, outputDataframe, outputFile)
 
-demo = gr.Blocks()
+demo = gr.Blocks(css="footer {visibility: hidden}")
 with demo:
     gr.Markdown(
     """
@@ -267,4 +267,4 @@ with demo:
     #     gr.Examples(examples, inputs=input)
     #     input.change(fn=ner, inputs=input, outputs=output)
 #layout="vertical"
-demo.launch(server_name='0.0.0.0')
+demo.launch(server_name='0.0.0.0', server_port=7861)
